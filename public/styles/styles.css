@@ -3,3 +3,8 @@ body {
   font-family: Nunito, Arial, sans-serif;
   font-size: 1.125rem;
 }
+
+.main-header {
+  height: 4rem;
+  padding: 23px 18px;
+}
