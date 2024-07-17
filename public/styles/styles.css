@@ -1,3 +1,7 @@
+:root {
+  --main-color: #ed6436;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +19,15 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
 .main-header {
   height: 4rem;
   padding: 0 18px;
@@ -30,10 +43,52 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (width >= 800px) {
+    display: none;
+  }
 }
 
 .burger-line {
   background-color: #000;
   height: 2px;
   width: 100%;
+}
+
+.main-navigation {
+  display: none;
+
+  @media (width >= 800px) {
+    display: block;
+  }
+}
+
+.main-navigation-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 73px;
+  font-weight: 800;
+
+  li {
+    position: relative;
+  }
+}
+
+.main-navigation-link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  &:hover::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
