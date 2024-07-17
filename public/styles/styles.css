@@ -30,10 +30,22 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (width >= 800px) {
+    display: none;
+  }
 }
 
 .burger-line {
   background-color: #000;
   height: 2px;
   width: 100%;
+}
+
+.main-navigation {
+  display: none;
+
+  @media (width >= 800px) {
+    display: block;
+  }
 }
