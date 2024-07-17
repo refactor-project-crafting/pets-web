@@ -8,9 +8,32 @@ body {
   font-size: 1.125rem;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .main-header {
   height: 4rem;
   padding: 0 18px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 15px 0px #0001;
+}
+
+.burger {
+  width: 30px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-line {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
 }
