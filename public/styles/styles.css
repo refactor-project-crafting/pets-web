@@ -35,6 +35,14 @@ a {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 1px 15px 0px #0001;
+
+  .button {
+    display: none;
+
+    @media (width >= 800px) {
+      display: inline;
+    }
+  }
 }
 
 .burger {
