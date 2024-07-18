@@ -28,6 +28,15 @@ a {
   }
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 18px;
+
+  @media (width >= 400px) {
+    width: 80vw;
+  }
+}
+
 .main-header {
   height: 4rem;
   padding: 0 18px;
